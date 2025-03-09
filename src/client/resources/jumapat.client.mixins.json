@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.lumiscosity.jumapat.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"plugin": "com.lumiscosity.jumapat.mixin.client.ConfigReaderMixinPlugin",
+	"client": [
+		"ArmorStandTransparentMixin",
+		"EndCrystalTransparentMixin",
+		"ItemFrameCutoutMixin",
+		"ItemFrameTransparentMixin",
+		"PaintingCutoutMixin",
+		"PaintingTransparentMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "jumapat",
+	"version": "1.0.0",
+	"name": "Just Make Paintings Transparent",
+	"description": "Except it includes more entities, actually",
+	"authors": [
+		"lumiscosity"
+	],
+	"contact": {
+		"sources": "https://github.com/lumiscosity/jumapat"
+	},
+	"license": "CC0-1.0",
+	"icon": "icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.lumiscosity.jumapat.JustMakePaintingsTransparentClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "jumapat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21"
+	}
+}
