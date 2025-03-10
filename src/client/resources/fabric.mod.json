@@ -3,14 +3,14 @@
 	"id": "jumapat",
 	"version": "1.0.0",
 	"name": "Just Make Paintings Transparent",
-	"description": "Except it includes more entities, actually",
+	"description": "Make paintings (and a few other entities) support translucency",
 	"authors": [
 		"lumiscosity"
 	],
 	"contact": {
 		"sources": "https://github.com/lumiscosity/jumapat"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "icon.png",
 	"environment": "client",
 	"entrypoints": {

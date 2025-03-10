@@ -26,7 +26,7 @@ public class ConfigReaderMixinPlugin implements IMixinConfigPlugin {
                 writer.write("PAINTING=TRANSPARENT\n");
                 writer.write("ITEM_FRAME=TRANSPARENT\n");
                 writer.write("END_CRYSTAL=TRANSPARENT\n");
-                writer.write("ARMOR_STAND=TRANSPARENT\n");
+                //writer.write("ARMOR_STAND=TRANSPARENT\n");
                 writer.close();
             } catch (IOException ignored) {
             }
@@ -35,7 +35,7 @@ public class ConfigReaderMixinPlugin implements IMixinConfigPlugin {
         options.put("PAINTING", MconfGetter.get(config, "PAINTING"));
         options.put("ITEM_FRAME", MconfGetter.get(config, "ITEM_FRAME"));
         options.put("END_CRYSTAL", MconfGetter.get(config, "END_CRYSTAL"));
-        options.put("ARMOR_STAND", MconfGetter.get(config, "ARMOR_STAND"));
+        //options.put("ARMOR_STAND", MconfGetter.get(config, "ARMOR_STAND"));
     }
 
     @Override
@@ -49,7 +49,7 @@ public class ConfigReaderMixinPlugin implements IMixinConfigPlugin {
             case "com.lumiscosity.jumapat.mixin.client.PaintingTransparentMixin" -> Objects.equals(options.get("PAINTING"), "TRANSPARENT");
             case "com.lumiscosity.jumapat.mixin.client.ItemFrameTransparentMixin" -> Objects.equals(options.get("ITEM_FRAME"), "TRANSPARENT");
             case "com.lumiscosity.jumapat.mixin.client.EndCrystalTransparentMixin" -> Objects.equals(options.get("END_CRYSTAL"), "TRANSPARENT");
-            case "com.lumiscosity.jumapat.mixin.client.ArmorStandTransparentMixin" -> Objects.equals(options.get("ARMOR_STAND"), "TRANSPARENT");
+            //case "com.lumiscosity.jumapat.mixin.client.ArmorStandTransparentMixin" -> Objects.equals(options.get("ARMOR_STAND"), "TRANSPARENT");
             case "com.lumiscosity.jumapat.mixin.client.PaintingCutoutMixin" -> Objects.equals(options.get("PAINTING"), "CUTOUT");
             case "com.lumiscosity.jumapat.mixin.client.ItemFrameCutoutMixin" -> Objects.equals(options.get("ITEM_FRAME"), "CUTOUT");
             default -> false;
