@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "jumapat",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Just Make Paintings Transparent",
 	"description": "Make paintings (and a few other entities) support translucency",
 	"authors": [
