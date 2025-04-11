@@ -20,7 +20,7 @@ public class MconfGetter {
             while (line != null) {
                 if (!line.startsWith("#")) {
                     String[] split = line.split("=", 2);
-                    if (Objects.equals(split[0], key)) {
+                    if (Objects.equals(split[0].toUpperCase(), key.toUpperCase())) {
                         reader.close();
                         return split[1];
                     }
