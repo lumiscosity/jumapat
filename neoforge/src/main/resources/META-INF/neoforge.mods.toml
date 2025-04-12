@@ -1,0 +1,24 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+[[mods]]
+modId = "jumapat"
+version = "${version}"
+displayName = "Just Make Paintings Transparent"
+authors = "lumiscosity"
+description = "Make paintings (and a few other entities) support translucency"
+logoFile = "icon.png"
+[[dependencies.jumapat]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "CLIENT"
+[[dependencies.jumapat]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "CLIENT"
+[[mixins]]
+config = "jumapat.client.mixins.json"
